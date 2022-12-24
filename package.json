@@ -1,0 +1,22 @@
+{
+  "name": "spla_stage_info",
+  "version": "0.0.1",
+  "description": "Splatoon2,3の情報を取得して表示するアプリ。",
+  "main": "main.cjs",
+  "repository": "https://github.com/gx1285/splatoon_stage_info",
+  "author": "gx1285",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npx electron ."
+  },
+  "dependencies": {
+    "axios": "^1.2.1",
+    "is-online": "^10.0.0"
+  },
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
+  }
+}
