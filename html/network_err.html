@@ -6,15 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css" />
     <style>
-      body {
-        font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
-          "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
+      @media (prefers-color-scheme: dark) {
+        body {
+          font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+            "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
+          color: #fff;
+          background-color: rgb(34, 34, 34);
+        }
+        .err {
+          color: rgb(255, 144, 144);
+        }
+      }
+
+      @media (prefers-color-scheme: light) {
+        body {
+          color: #000;
+          background-color: #fff;
+          font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+            "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
+        }
+        .err {
+          color: rgb(255, 0, 0);
+        }
       }
     </style>
-    <title>Error</title>
+    <title id="title">Error</title>
   </head>
   <body>
-    <h1 style="color: red"><i class="fas fa-times"></i>: ネットワークエラー</h1>
+    <h1 class="err"><i class="fas fa-times"></i>: ネットワークエラー</h1>
     <p>
       ネットワークエラーが起きていても過去のデータを閲覧することができます。(データがある場合)
     </p>
